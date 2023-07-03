@@ -12,20 +12,28 @@ class App extends React.Component {
     super(props);
     this.state = {
       goods: goods,
+      currentCategory: null,
     };
   }
 
+  handleCategorySelect(category) {
+    this.setState({ currentCategory: category });
+  }
+
   render() {
+    const filteredGoods = this.state.currentCategory
+    ? this.state.goods.filter(item => item.class === this.state.currentCategory)
+    : this.state.goods;
     return (
       <Router>
         <div>
           <div className="wrapper">
             <Header />
           </div>
-          <Topblock />
+          <Topblock onCategorySelect={category => this.handleCategorySelect(category)} />
           <div className="wrapper">
             <Routes>
-              <Route path="/" element={<Items items={this.state.goods} />} />
+            <Route path="/" element={<Items items={filteredGoods} />} />
               <Route path="/products/:id" element={<Product items={goods} />} />
             </Routes>
           </div>

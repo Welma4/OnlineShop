@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -247,8 +248,28 @@ main .price {
 }
 
 main .name {
-    margin-top: 25px;
+    margin-top: 10px;
     margin-bottom: 5px;
+}
+
+.reviews {
+    display: flex;
+    margin-top: 3px;
+}
+
+.reviews__star {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    margin-top: 2px;
+}
+
+main .reviews__rating {
+    margin-right: 9px;
+}
+
+main .reviews__point {
+    margin-right: -10px;
 }
 
 main .name:hover {
@@ -263,17 +284,32 @@ main .name:hover {
 
 .product__title {
     font: normal 600 25px/20px 'Montserrat';
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .product__price {
     font: normal 600 30px/30px 'Montserrat';
     margin-bottom: 5px;
+    margin-top: 30px;
 }
 
 .product__number {
-    margin-bottom: 150px;
+    margin-bottom: 30px;
     font-style: italic;
+}
+
+.product__button {
+    height: 40px;
+    width: 250px;
+    border-radius: 10px;
+    border-color: rgb(241 202 143 / 94%);
+    background-color: rgb(241 202 143 / 54%);
+    font: normal 300 15px/15px 'Montserrat';
+    margin-bottom: 120px;
+}
+
+.product__button:hover {
+    background-color: rgba(223, 186, 130, 0.54);
 }
 
 .product__image {
@@ -292,6 +328,10 @@ main .name:hover {
     display: contents;
 }
 
+.product__slider {
+    width: 50%;
+  }
+
 .product__description-line {
     margin-bottom: 10px;
 }
@@ -302,6 +342,58 @@ main .name:hover {
     font-stretch: expanded;
 }
 
+.product-reviews {
+    width: 280px;
+    margin-bottom: 80px;
+}
+
+.product-reviews__title {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font: normal 600 23px/20px 'Montserrat';
+}
+
+.product-reviews__line {
+    margin-bottom: 15px;
+}
+
+.review-container {
+    width: 600px;
+    background-color: rgb(241 202 143 / 54%);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.product-reviews__reviewer {
+    margin-bottom: 10px;
+    padding-top: 10px;
+    font: normal 600 15px/15px 'Montserrat';
+}
+
+.product-reviews__review {
+    padding-bottom : 20px;
+    word-wrap: break-word;
+}
+
+.review-text-container {
+    width: 550px;
+    margin: 0 auto;
+}
+
+.name-rating-container {
+    display: flex;
+    
+}
+
+.product-reviews__personal-rating {
+    margin: 8px 0 0 10px;
+}
+
+.product-reviews__star {
+    width: 15px;
+    height: 15px;
+    margin: 9px -5px 0 20px;
+}
 
 footer .block {
     display: flex;
@@ -322,4 +414,32 @@ footer .rights {
 footer .footer-back {
     height: 100px;
     background-color: rgb(214, 187, 153);
+}
+
+.carousel .thumbs {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel .slide img {
+    height: 450px;
+    max-width: 55%;
+}
+
+.carousel .thumb img {
+    height: 100px;
+}
+
+.carousel.carousel-slider .control-arrow {
+    margin-left: 22.5%;
+    margin-right: 22.5%;
+}
+
+.carousel .carousel-status {
+    margin-right: 22.5%;
+}
+
+.carousel-root {
+    margin: 0 auto;
+    width: 600px;
 }

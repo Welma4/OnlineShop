@@ -3,10 +3,12 @@ import Item from './item';
 
 export class Items extends Component {
   render() {
+    const { items } = this.props;
+
     return (
       <main>
-        {this.props.items.map(element => ( 
-            <Item key={element.id} item = {element} />
+        {items.map(element => ( 
+          <Item key={element.id} item={element} />
         ))}
       </main>
     );

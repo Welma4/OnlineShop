@@ -7,7 +7,7 @@ export default function header() {
     return (
         <header>
             <div className='main'>
-                <span className='logo'>Your Shkaf</span>
+                <span className='logo'>Your Shkaf Online</span>
                 <div>
                     <ul className='list'>
                         <li className='list__item'>
